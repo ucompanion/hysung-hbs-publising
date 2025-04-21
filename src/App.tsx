@@ -15,7 +15,7 @@ import NotFound from "./NotFound";
 
 const Router = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/hysung-hs-publising">
 			<Routes>
 				<Route path="/" element={<PageList />} />
 				<Route path="/Main" element={<UserLayoutMain />}>
