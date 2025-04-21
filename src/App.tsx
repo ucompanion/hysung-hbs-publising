@@ -15,13 +15,13 @@ import NotFound from "./NotFound";
 
 const Router = () => {
 	return (
-		<BrowserRouter basename="/hysung-hs-publising">
+		<BrowserRouter basename="/hysung-hbs-publising">
 			<Routes>
 				<Route path="/" element={<PageList />} />
-				<Route path="/Main" element={<UserLayoutMain />}>
+				<Route path="Main" element={<UserLayoutMain />}>
 					<Route index element={<Index />} />
 				</Route>
-				<Route path="/Pages/" element={<UserLayoutSub />}>
+				<Route path="Pages/" element={<UserLayoutSub />}>
 					<Route path='Prototype' element={<Prototype />} />
 				</Route>
 				<Route path="*" element={<NotFound />} />
