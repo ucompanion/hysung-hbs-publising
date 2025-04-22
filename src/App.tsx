@@ -1,38 +1,48 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// Layout
-import UserLayoutSub from './Layouts/UserLayoutSub';
-import UserLayoutMain from './Layouts/UserLayoutMain';
+// Guide - IA
+import IALayout from "./guide/ia/components/iaLayout";
+import FrontList from "./guide/ia/frontList";
+import GuideList from "./guide/ia/guideList";
 
-// Guide
-import GuidePages from "./Guide/ia/guidePages";
-import FrontPages from "./Guide/ia/frontPages";
+// Guide - UI
+import UILayout from "./guide/ui/components/uiLayout";
+import PrototypePage from "./guide/ui/prototypePage";
 
-import PrototypePage from "./Guide/ui/PrototypePage";
+// User Layout
+import UserLayoutSub from './components/layouts/userLayoutSub';
+import UserLayoutMain from './components/layouts/userLayoutMain';
 
-// Pages
-import Main from "./Pages/Main";
-import Prototype from "./Pages/Prototype";
+// User Pages
+import Main from "./pages/main";
+import Prototype from "./pages/prototype";
 import NotFound from "./NotFound";
 
 const Router = () => {
 	return (
 		<BrowserRouter basename="/hysung-hbs-publising">
 			<Routes>
-				<Route path="/" element={<GuidePages />} />
-				<Route path="frontPages" element={<FrontPages />} />
+				 {/* Guide Pages */}
+				 <Route path="/" element={<IALayout />}>
+					<Route path="/" element={<GuideList />} />
+					<Route path="guide/ia/frontList" element={<FrontList />} />
+				 </Route>
+				 <Route path="guide/" element={<UILayout />}>
+					<Route path="ui/prototype" element={<PrototypePage />} />
+				 </Route>
 
-				<Route path="main" element={<UserLayoutMain />}>
-					<Route index element={<Main />} />
+				{/* Main Pages */}
+				<Route path="pages/" element={<UserLayoutMain />}>
+					<Route path="main" element={<Main />} />
 				</Route>
+
+				{/* Sub Pages */}
 				<Route path="pages/" element={<UserLayoutSub />}>
 					<Route path='prototype' element={<Prototype />} />
 				</Route>
 
-				 {/* 새로운 라우트 추가 */}
-				 <Route path="/Guide/ui" element={<PrototypePage />} />
-				 
+				{/* System Pages */}
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>

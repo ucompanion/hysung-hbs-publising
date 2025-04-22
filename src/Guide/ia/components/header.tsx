@@ -8,7 +8,7 @@ const Header = () => {
 			<nav className="g-gnb">
 				<ul>
 					<li><NavLink to='/' className={({ isActive }) => isActive ? 'is-selected' : ''}>가이드</NavLink></li>
-					<li><NavLink to='/frontPages' className={({ isActive }) => isActive ? 'is-selected' : ''}>페이지</NavLink></li>
+					<li><NavLink to='guide/ia/frontList' className={({ isActive }) => isActive ? 'is-selected' : ''}>페이지</NavLink></li>
 				</ul>
 			</nav>
 		</header>

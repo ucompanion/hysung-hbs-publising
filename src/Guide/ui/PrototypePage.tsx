@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import Button from './Button';
-import Accordion from './Accordion';
-import Icon from './Icon';
+import Button from './button';
+import Accordion from './accordion';
+import Icon from './icon';
 
 const PrototypePage = () => {
   return (
@@ -24,7 +24,7 @@ const PrototypePage = () => {
         <h2>Icon</h2>
         <Icon />
       </section>
-      
+
     </div>
   );
 };

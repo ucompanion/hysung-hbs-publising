@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import PrototypePage from './PrototypePage';
+import PrototypePage from './prototypePage';
 
 export default function GuideUIPage() {
     return <PrototypePage />;
