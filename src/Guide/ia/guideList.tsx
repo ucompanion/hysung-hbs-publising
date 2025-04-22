@@ -1,5 +1,5 @@
 import React from 'react';
-import ComponentRow, { TableRowData } from './components/ComponentRow';
+import ComponentRow, { TableRowData } from './components/componentRow';
 import { useEffect, useState } from 'react';
 
 const dataList: TableRowData[] = [
