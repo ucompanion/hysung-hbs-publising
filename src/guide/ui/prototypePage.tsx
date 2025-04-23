@@ -16,7 +16,7 @@ const PrototypePage = () => {
           <div className="inner">
             <h1 className="g-h1">Prototype</h1>
           </div>
-          
+
           {/* Section */}
           <section className="g-section inner">
             <div className="g-section-header">
@@ -30,7 +30,7 @@ const PrototypePage = () => {
                     <col style={{ width: '20%' }} />
                     <col />
                   </colgroup>
-                  
+
                   <tbody>
                   <tr>
                         <th className="align-l">기본</th>
@@ -47,7 +47,7 @@ const PrototypePage = () => {
               <pre>
                 <code>
                   {`
-              <div></div>
+<div></div>
                   `}
                 </code>
               </pre>
