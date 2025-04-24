@@ -1,5 +1,6 @@
+'use client';
 import React from 'react';
-import ComponentRow, { TableRowData } from './components/componentRow';
+import IAComponentRow, { TableRowData } from './components/iaComponentRow';
 import { useEffect, useState } from 'react';
 
 const dataList: TableRowData[] = [
@@ -9,7 +10,7 @@ const dataList: TableRowData[] = [
 		depth2: 'Layout',
 		depth3: '',
 		type: '', // AP, CP, SP, FP, BP
-		url: '',
+		url: '/Pages/Prototype',
 		complete: '완료', // [빈값] | 대기 | 보류 | 완료
 		memo: [ // YYYY-MM-DD 이름 : 내용 상태
 			'2025-04-08 조찬기 : 초안 완료'
@@ -110,7 +111,7 @@ const FrontList = () => {
 									</thead>
 									<tbody>
 										{dataList.map((item, index) => (
-											<ComponentRow key={index} data={{ ...item, num: index + 1 }} />
+											<IAComponentRow key={index} data={{ ...item, num: index + 1 }} />
 										))}
 									</tbody>
 								</table>

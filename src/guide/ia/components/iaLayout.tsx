@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './header';
+import IAHeader from './iaHeader';
 import { Outlet } from 'react-router-dom';
-import '../assets/css/import.css';
+import '../css/import.css';
 
 const IALayout = () => {
 	return (
-		<div className='g-wrapper ia-wrap'>
-			<Header />
+		<div className='g-wrapper g-ia'>
+			<IAHeader />
 			<Outlet />
 		</div>
 	);

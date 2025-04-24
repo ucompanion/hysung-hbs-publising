@@ -1,9 +1,9 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
+import '../css/guide.css';
 
 const UILayout = () => {
 	return (
-		<div className='g-wrapper'>
+		<div className='g-wrapper g-ui'>
 			<Outlet />
 		</div>
 	);

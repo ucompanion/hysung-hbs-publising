@@ -1,9 +1,21 @@
+'use client';
 import React from 'react';
-import ComponentRow, { TableRowData } from './components/componentRow';
+import IAComponentRow, { TableRowData } from './components/iaComponentRow';
 import { useEffect, useState } from 'react';
 
 const dataList: TableRowData[] = [
 	// Components
+	{
+		depth1: 'Templetes',
+		depth2: 'Prototype',
+		depth3: '',
+		type: '', // AP, CP, SP, FP, BP
+		url: '/guide/ui/prototypePage',
+		complete: '완료', // [빈값] | 대기 | 보류 | 완료
+		memo: [ // YYYY-MM-DD 이름 : 내용 상태
+			'2025-04-08 조찬기 : 초안 완료'
+		]
+	},
 	{
 		depth1: 'Components',
 		depth2: 'Accordion',
@@ -106,7 +118,7 @@ const GuidetList = () => {
 									</thead>
 									<tbody>
 										{dataList.map((item, index) => (
-											<ComponentRow key={index} data={{ ...item, num: index + 1 }} />
+											<IAComponentRow key={index} data={{ ...item, num: index + 1 }} />
 										))}
 									</tbody>
 								</table>

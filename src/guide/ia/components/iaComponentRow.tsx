@@ -12,7 +12,7 @@ export interface TableRowData {
     memo?: string[];
 }
 
-const ComponentRow: React.FC<{ data: TableRowData }> = ({ data }) => {
+const IAComponentRow: React.FC<{ data: TableRowData }> = ({ data }) => {
     return (
         <tr
             className={
@@ -28,7 +28,7 @@ const ComponentRow: React.FC<{ data: TableRowData }> = ({ data }) => {
             <td className="col-2depth">{data.depth2}</td>
             <td className="col-3depth">{data.depth3 ?? ''}</td>
             <td className="col-type" data-type={data.type ?? ''}></td>
-            <td className="col-url"><NavLink to={data.url ?? ''}></NavLink></td>
+            <td className="col-url"><NavLink to={data.url ?? ''}>{data.url ?? ''}</NavLink></td>
             <td className="col-complete" data-complete={data.complete ?? ''}></td>
             <td className="col-memo">
                 {data.memo && data.memo.map((memoItem, index) => (
@@ -39,4 +39,4 @@ const ComponentRow: React.FC<{ data: TableRowData }> = ({ data }) => {
     );
 };
 
-export default ComponentRow;
+export default IAComponentRow;

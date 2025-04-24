@@ -24,12 +24,12 @@ const Router = () => {
 		<BrowserRouter basename="/hysung-hbs-publising">
 			<Routes>
 				 {/* Guide Pages */}
-				 <Route path="/" element={<IALayout />}>
-					<Route path="/" element={<GuideList />} />
-					<Route path="guide/ia/frontList" element={<FrontList />} />
+				 <Route element={<IALayout />}>
+					<Route path='guide/ia/guideList/' element={<GuideList />} />
+					<Route path="/" element={<FrontList />} />
 				 </Route>
-				 <Route path="guide/" element={<UILayout />}>
-					<Route path="ui/prototype" element={<PrototypePage />} />
+				 <Route path='guide/ui/' element={<UILayout />}>
+					<Route path="prototypePage" element={<PrototypePage />} />
 				 </Route>
 
 				{/* Main Pages */}
