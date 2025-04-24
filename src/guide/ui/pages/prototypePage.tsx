@@ -29,11 +29,15 @@ const PrototypePage = () => {
 									<tbody>
 										<tr>
 											<th className="align-l">기본</th>
-											<td className="align-l"><code className="g-code-label">data-bul-*</code></td>
+											<td className="align-l"><code className="g-code-label">모듈명-*</code></td>
 										</tr>
 										<tr>
 											<th className="align-l">모듈</th>
 											<td className="align-l"><code className="g-code-label">module-*</code></td>
+										</tr>
+										<tr>
+											<th className="align-l">옵션</th>
+											<td className="align-l"><code className="g-code-label">[강조]</code>, <code className="g-code-label">[방향]</code></td>
 										</tr>
 									</tbody>
 								</table>
@@ -46,14 +50,11 @@ const PrototypePage = () => {
                   `}
 								</code>
 							</pre>
-							<h3 className="g-h3">기본</h3>
-							<pre>
-								<code>
-									{`
-<div></div>
-                  `}
-								</code>
-							</pre>
+							<h3 className="g-h3">옵션</h3>
+							<h4 className="g-h4">강조</h4>
+							<h5 className="g-h5">Case</h5>
+							<h4 className="g-h4">방향</h4>
+							<h5 className="g-h5">Case</h5>
 						</div>
 					</section>
 					{/* Section */}

@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Guide - IA
 import IALayout from "./guide/ia/components/iaLayout";
-import FrontList from "./guide/ia/frontList";
-import GuideList from "./guide/ia/guideList";
+import FrontList from "./guide/ia/pages/frontList";
+import GuideList from "./guide/ia/pages/guideList";
 
 // Guide - UI
 import UILayout from "./guide/ui/components/uiLayout";
-import PrototypePage from "./guide/ui/prototypePage";
+import PrototypePage from "./guide/ui/pages/prototypePage";
 
 // User Layout
 import UserLayoutSub from './components/layouts/userLayoutSub';

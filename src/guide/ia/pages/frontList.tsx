@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import IAComponentRow, { TableRowData } from './components/iaComponentRow';
+import IAComponentRow, { TableRowData } from '../components/iaComponentRow';
 import { useEffect, useState } from 'react';
 
 const dataList: TableRowData[] = [
