@@ -208,7 +208,7 @@ const dataList: TableRowData[] = [
 		depth2: 'Layer',
 		depth3: 'Modal',
 		type: '', // AP, CP, SP, FP, BP
-		url: '/guide/ui/layerPage',
+		url: '/guide/ui/modalPage',
 		complete: '', // [빈값] | 대기 | 보류 | 완료
 		memo: [ // YYYY-MM-DD 이름 : 내용 상태
 			'Bootstrap React'

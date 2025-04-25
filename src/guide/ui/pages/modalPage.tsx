@@ -9,7 +9,7 @@ const LayerPage = () => {
 			<div id="content" className="content">
 				<div className="content-body outer">
 					<div className="inner">
-						<h1 className="g-h1">Layer</h1>
+						<h1 className="g-h1">Modal</h1>
 					</div>
                     {/* section */}
 					<section className="g-section inner">
@@ -27,7 +27,11 @@ const LayerPage = () => {
 									<tbody>
 										<tr>
 											<th className="align-l">기본</th>
-											<td className="align-l"><code className="g-code-label">layer</code></td>
+											<td className="align-l"><code className="g-code-label">modal</code></td>
+										</tr>
+										<tr>
+											<th className="align-l">분류</th>
+											<td className="align-l"><code className="g-code-label">*-modal</code></td>
 										</tr>
 										<tr>
 											<th className="align-l">모듈</th>
@@ -36,20 +40,16 @@ const LayerPage = () => {
 										<tr>
 											<th className="align-l">옵션</th>
 											<td className="align-l">
-												{/* <code className="g-code-label">[강조]</code>, <code className="g-code-label">[라인]</code>, <code className="g-code-label">[가변]</code> */}
-											</td>
-										</tr>
-										<tr>
-											<th className="align-l">구성</th>
-											<td className="align-l">
-												
+												<code className="g-code-label">[효과]</code>, 
+												<code className="g-code-label">[방향]</code>
 											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<h3 className="g-h3">옵션</h3>
-							
+							<ul className="g-desc">
+								<li>[참조] 부트스트랩 : <a href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank" className="g-link">https://getbootstrap.com/docs/5.3/components/modal/</a></li>
+							</ul>
 						</div>
 					</section>
 					{/* // section */}

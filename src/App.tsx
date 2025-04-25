@@ -26,7 +26,7 @@ import PostPage from "./guide/ui/pages/postPage";
 import AccordionPage from "./guide/ui/pages/accordionPage";
 import DropdownPage from "./guide/ui/pages/dropdownPage";
 import TabPage from "./guide/ui/pages/tabPage";
-import LayerPage from "./guide/ui/pages/layerPage";
+import ModalPage from "./guide/ui/pages/modalPage";
 import ToastPage from "./guide/ui/pages/toastPage";
 import TooltipPage from "./guide/ui/pages/tooltipPage";
 import PopoverPage from "./guide/ui/pages/popoverPage";
@@ -68,7 +68,7 @@ const Router = () => {
 					<Route path="accordionPage" element={<AccordionPage />} />
 					<Route path="dropdownPage" element={<DropdownPage />} />
 					<Route path="tabPage" element={<TabPage />} />
-					<Route path="layerPage" element={<LayerPage />} />
+					<Route path="modalPage" element={<ModalPage />} />
 					<Route path="toastPage" element={<ToastPage />} />
 					<Route path="tooltipPage" element={<TooltipPage />} />
 					<Route path="popoverPage" element={<PopoverPage />} />
