@@ -9,6 +9,27 @@ import GuideList from "./guide/ia/pages/guideList";
 // Guide - UI
 import UILayout from "./guide/ui/components/uiLayout";
 import PrototypePage from "./guide/ui/pages/prototypePage";
+import ButtonPage from "./guide/ui/pages/buttonPage";
+import IconPage from "./guide/ui/pages/iconPage";
+import LabelPage from "./guide/ui/pages/labelPage";
+import ThumbPage from "./guide/ui/pages/thumbPage";
+import FormInputPage from "./guide/ui/pages/formInputPage";
+import FormCheckboxPage from "./guide/ui/pages/formCheckboxPage";
+import FormControlsPage from "./guide/ui/pages/formControlsPage";
+import FormFieldsetPage from "./guide/ui/pages/formFieldsetPage";
+import SectionPage from "./guide/ui/pages/sectionPage";
+import DataPage from "./guide/ui/pages/dataPage";
+import InfoPage from "./guide/ui/pages/infoPage";
+import StepPage from "./guide/ui/pages/stepPage";
+import BoardPage from "./guide/ui/pages/boardPage";
+import PostPage from "./guide/ui/pages/postPage";
+import AccordionPage from "./guide/ui/pages/accordionPage";
+import DropdownPage from "./guide/ui/pages/dropdownPage";
+import TabPage from "./guide/ui/pages/tabPage";
+import LayerPage from "./guide/ui/pages/layerPage";
+import ToastPage from "./guide/ui/pages/toastPage";
+import TooltipPage from "./guide/ui/pages/tooltipPage";
+import PopoverPage from "./guide/ui/pages/popoverPage";
 
 // User Layout
 import UserLayoutSub from './components/layouts/userLayoutSub';
@@ -23,14 +44,35 @@ const Router = () => {
 	return (
 		<BrowserRouter basename="/hysung-hbs-publising">
 			<Routes>
-				 {/* Guide Pages */}
-				 <Route element={<IALayout />}>
+				{/* Guide Pages */}
+				<Route element={<IALayout />}>
 					<Route path='guide/ia/guideList/' element={<GuideList />} />
 					<Route path="/" element={<FrontList />} />
-				 </Route>
-				 <Route path='guide/ui/' element={<UILayout />}>
+				</Route>
+				<Route path='guide/ui/' element={<UILayout />}>
 					<Route path="prototypePage" element={<PrototypePage />} />
-				 </Route>
+					<Route path="buttonPage" element={<ButtonPage />} />
+					<Route path="iconPage" element={<IconPage />} />
+					<Route path="labelPage" element={<LabelPage />} />
+					<Route path="thumbPage" element={<ThumbPage />} />
+					<Route path="formInputPage" element={<FormInputPage />} />
+					<Route path="formCheckboxPage" element={<FormCheckboxPage />} />
+					<Route path="formControlsPage" element={<FormControlsPage />} />
+					<Route path="formFieldsetPage" element={<FormFieldsetPage />} />
+					<Route path="sectionPage" element={<SectionPage />} />
+					<Route path="dataPage" element={<DataPage />} />
+					<Route path="infoPage" element={<InfoPage />} />
+					<Route path="stepPage" element={<StepPage />} />
+					<Route path="boardPage" element={<BoardPage />} />
+					<Route path="postPage" element={<PostPage />} />
+					<Route path="accordionPage" element={<AccordionPage />} />
+					<Route path="dropdownPage" element={<DropdownPage />} />
+					<Route path="tabPage" element={<TabPage />} />
+					<Route path="layerPage" element={<LayerPage />} />
+					<Route path="toastPage" element={<ToastPage />} />
+					<Route path="tooltipPage" element={<TooltipPage />} />
+					<Route path="popoverPage" element={<PopoverPage />} />
+				</Route>
 
 				{/* Main Pages */}
 				<Route path="pages/" element={<UserLayoutMain />}>
